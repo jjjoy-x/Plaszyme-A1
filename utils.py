@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 def clean_sequence(seq: str) -> str:
-    """只保留标准氨基酸字母"""
+    """Only keep 20 standard amino acids and convert to uppercase"""
     return re.sub(r"[^ACDEFGHIKLMNPQRSTVWY]", "", str(seq).upper())
 
 def get_embeddings(sequences, batch_size=4):
@@ -29,7 +29,7 @@ def get_embeddings(sequences, batch_size=4):
     return np.array(embeddings)
 
 def expand_labels(df, label_col="degradable_plastics"):
-    """把多标签拆成单标签"""
+    """Expand rows with multiple labels separated by ';' into multiple rows"""
     rows = []
     for _, row in df.iterrows():
         labels = str(row[label_col]).split(";")

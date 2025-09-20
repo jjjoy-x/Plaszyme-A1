@@ -1,7 +1,7 @@
 from sklearn.ensemble import HistGradientBoostingClassifier
 
 def get_histgb_model(random_seed=42):
-    """返回一个 HistGB 分类器"""
+    """Only for classification"""
     clf = HistGradientBoostingClassifier(
         max_iter=400,
         random_state=random_seed,

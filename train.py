@@ -22,18 +22,14 @@ def train(train_csv, work_dir, model_dir, batch_size=4):
     df["sequence"] = df["sequence"].apply(clean_sequence)
     df = df[df["sequence"].str.len() > 0].reset_index(drop=True)
 
-    # 多标签 → 单标签
     df = expand_labels(df, LABEL_COL)
 
-    # 标签编码
     le = LabelEncoder()
     y = le.fit_transform(df[LABEL_COL])
-
-    # ESM embedding
+    
     X = get_embeddings(df["sequence"].tolist(), batch_size=batch_size)
     pd.DataFrame(X).to_csv(os.path.join(work_dir, "embeddings.csv"), index=False)
 
-    # 样本均衡（复制 + SMOTE）
     label_counts = pd.Series(y).value_counts()
     rare_classes = label_counts[label_counts == 1].index
     if len(rare_classes) > 0:
@@ -66,7 +62,7 @@ def train(train_csv, work_dir, model_dir, batch_size=4):
     # 保存
     joblib.dump(clf, os.path.join(model_dir, "classifier.pkl"))
     joblib.dump(le, os.path.join(model_dir, "label_encoder.pkl"))
-    print(f"[DONE] 模型和编码器已保存到 {model_dir}")
+    print(f"Model and label encoder saved to {model_dir}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
