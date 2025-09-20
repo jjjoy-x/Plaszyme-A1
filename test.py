@@ -93,7 +93,7 @@ def test(test_csv, model_dir, out_dir, batch_size=4, threshold=0.3):
     metrics_all["bucket"] = "all"
     results.append(metrics_all)
 
-    # 保存 summary_by_bucket
+    # save summary
     summary_df = pd.DataFrame(results)
     summary_file = os.path.join(out_dir, "summary_by_bucket.csv")
     summary_df.to_csv(summary_file, index=False, float_format="%.4f")

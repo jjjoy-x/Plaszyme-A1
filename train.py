@@ -26,7 +26,7 @@ def train(train_csv, work_dir, model_dir, batch_size=4):
 
     le = LabelEncoder()
     y = le.fit_transform(df[LABEL_COL])
-    
+
     X = get_embeddings(df["sequence"].tolist(), batch_size=batch_size)
     pd.DataFrame(X).to_csv(os.path.join(work_dir, "embeddings.csv"), index=False)
 
@@ -55,11 +55,9 @@ def train(train_csv, work_dir, model_dir, batch_size=4):
         os.path.join(work_dir, "train_resampled.csv"), index=False
     )
 
-    # 训练
     clf = get_histgb_model(random_seed=RANDOM_SEED)
     clf.fit(X_res, y_res)
 
-    # 保存
     joblib.dump(clf, os.path.join(model_dir, "classifier.pkl"))
     joblib.dump(le, os.path.join(model_dir, "label_encoder.pkl"))
     print(f"Model and label encoder saved to {model_dir}")
