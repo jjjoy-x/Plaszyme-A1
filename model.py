@@ -5,7 +5,8 @@ def get_histgb_model(random_seed=42):
     clf = HistGradientBoostingClassifier(
         max_iter=400,
         random_state=random_seed,
-        learning_rate=0.05,
+        learning_rate=0.1,
+        max_leaf_nodes=31,
         max_depth=None
     )
     return clf
