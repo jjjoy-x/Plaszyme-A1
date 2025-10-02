@@ -8,6 +8,9 @@ It leverages protein sequence embeddings and supervised learning models to predi
 The repository provides utilities for data preprocessing, feature embedding generation, model training, evaluation, 
 and prediction on new protein sequences.
 
+<img width="3668" height="1804" alt="df12216bab85839512aec53439850517" src="https://github.com/user-attachments/assets/dfeb3016-72d3-42b5-9147-8d4abb8782c5" />
+
+
 ---
 
 ## Repository Structure
