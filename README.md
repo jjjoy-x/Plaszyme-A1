@@ -2,7 +2,7 @@
 
 ## Overview
 
-PlaszymerV1 is a machine learning framework designed for the classification and analysis of plastic-degrading enzymes (Plaszymes). 
+Plaszyme A1 is a machine learning framework designed for the classification and analysis of plastic-degrading enzymes (Plaszymes). 
 It leverages protein sequence embeddings and supervised learning models to predict degradation potential across different plastic types.
 
 The repository provides utilities for data preprocessing, feature embedding generation, model training, evaluation, 
