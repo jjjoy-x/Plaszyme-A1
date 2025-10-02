@@ -31,7 +31,7 @@ PlaszymerV1/
 
 ## Installation
 
-esm1b model and configs are needed while using this model. You can download from https://dl.fbaipublicfiles.com/fair-esm/models/esm1b_t33_650M_UR50S.pt
+esm model and configs are needed while using this model. You can download from https://dl.fbaipublicfiles.com/fair-esm/models/esm1b_t33_650M_UR50S.pt
 
 It is recommended to create a virtual environment (e.g., Conda or venv).
 
