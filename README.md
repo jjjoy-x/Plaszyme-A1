@@ -1,4 +1,4 @@
-# PlaszymerV1
+# Plaszyme A1
 
 ## Overview
 
