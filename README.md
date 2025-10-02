@@ -1,5 +1,7 @@
 # Plaszyme A1
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 ## Overview
 
 Plaszyme A1 is a machine learning framework designed for the classification and analysis of plastic-degrading enzymes (Plaszymes). 
@@ -99,3 +101,20 @@ seq2,0.05,0.80,0.03,0.01,0.02,0.06,0.03,PE
 Model performance is evaluated using standard classification metrics (accuracy, precision, recall, F1-score).  
 Results will be stored in the `results/` directory after evaluation.
 
+---
+
+## License
+
+This project is licensed under the MIT License.  
+See the [LICENSE](./LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+- Thanks to **FAIR (Meta AI)** for releasing the [ESM protein language models](https://github.com/facebookresearch/esm), which form the basis of sequence embedding in this project.  
+- We acknowledge the use of **scikit-learn** as core framework supporting model development, training, and explainability.  
+- Protein sequence data were curated from publicly available resources such as **UniProt** and **PDB**, as well as previously published plastic-degrading enzyme studies.  
+- This project was inspired by recent advances in protein language models, particularly *Protein language models accelerate the discovery of plastic-degrading enzymes* (Medina-Ortiz,D. et al., 2024).  
+- We thank all team members and collaborators for their contributions to data preparation, model design, and experimental validation.  
+- This work was supported by **XJTLU-AI-CHINA**. 
