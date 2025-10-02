@@ -1,6 +1,9 @@
 # Plaszyme A1
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![WebApp](https://img.shields.io/badge/WebApp-Online-brightgreen?)](http://plaszyme.org/plaszyme)
+[![iGEM](https://img.shields.io/badge/iGEM-XJTLU--AI--China-blue?logo=)](https://teams.igem.org/5580)
+[![iGEM GitLab](https://img.shields.io/badge/GitLab-XJTLU--AI--China-orange?logo=gitlab)](https://gitlab.igem.org/2025/software-tools/xjtlu-ai-china)
 
 ## Overview
 
