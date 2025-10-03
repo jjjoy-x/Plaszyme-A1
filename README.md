@@ -1,4 +1,4 @@
-# Plaszyme PROTO
+# PlaszymeAlpha
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![WebApp](https://img.shields.io/badge/WebApp-Online-brightgreen?)](http://plaszyme.org/plaszyme)
@@ -7,7 +7,7 @@
 
 ## Overview
 
-Plaszyme PROTO is a machine learning framework designed for the classification and analysis of plastic-degrading enzymes (Plaszymes). 
+PlaszymeAlpha is a machine learning framework designed for the classification and analysis of plastic-degrading enzymes (Plaszymes). 
 It leverages protein sequence embeddings and supervised learning models to predict degradation potential across different plastic types.
 
 The repository provides utilities for data preprocessing, feature embedding generation, model training, evaluation, 
@@ -21,7 +21,7 @@ and prediction on new protein sequences.
 ## Repository Structure
 
 ```
-Plaszyme-PROTO/
+PlaszymeAlpha/
 ├── data/               # (Optional) Dataset folder for input sequences and labels
 ├── models/             # Saved models (e.g., classifier.pkl, label_encoder.pkl)
 ├── results/            # Output predictions and evaluation metrics
